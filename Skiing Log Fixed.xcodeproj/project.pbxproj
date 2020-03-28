@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		628D777D243018CB001A7AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D777C243018CB001A7AA2 /* AppDelegate.swift */; };
+		628D777F243018CB001A7AA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D777E243018CB001A7AA2 /* SceneDelegate.swift */; };
+		628D7781243018CB001A7AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D7780243018CB001A7AA2 /* ViewController.swift */; };
+		628D7784243018CB001A7AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628D7782243018CB001A7AA2 /* Main.storyboard */; };
+		628D7786243018CB001A7AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628D7785243018CB001A7AA2 /* Assets.xcassets */; };
+		628D7789243018CB001A7AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628D7787243018CB001A7AA2 /* LaunchScreen.storyboard */; };
+		628D7794243018CC001A7AA2 /* Skiing_Log_FixedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D7793243018CC001A7AA2 /* Skiing_Log_FixedTests.swift */; };
+		628D779F243018CC001A7AA2 /* Skiing_Log_FixedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D779E243018CC001A7AA2 /* Skiing_Log_FixedUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		628D7790243018CC001A7AA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 628D7771243018CB001A7AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 628D7778243018CB001A7AA2;
+			remoteInfo = "Skiing Log Fixed";
+		};
+		628D779B243018CC001A7AA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 628D7771243018CB001A7AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 628D7778243018CB001A7AA2;
+			remoteInfo = "Skiing Log Fixed";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		628D7779243018CB001A7AA2 /* Skiing Log Fixed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skiing Log Fixed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		628D777C243018CB001A7AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		628D777E243018CB001A7AA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		628D7780243018CB001A7AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		628D7783243018CB001A7AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		628D7785243018CB001A7AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		628D7788243018CB001A7AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		628D778A243018CB001A7AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628D778F243018CC001A7AA2 /* Skiing Log FixedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Skiing Log FixedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		628D7793243018CC001A7AA2 /* Skiing_Log_FixedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiing_Log_FixedTests.swift; sourceTree = "<group>"; };
+		628D7795243018CC001A7AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628D779A243018CC001A7AA2 /* Skiing Log FixedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Skiing Log FixedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		628D779E243018CC001A7AA2 /* Skiing_Log_FixedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skiing_Log_FixedUITests.swift; sourceTree = "<group>"; };
+		628D77A0243018CC001A7AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		628D7776243018CB001A7AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628D778C243018CC001A7AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628D7797243018CC001A7AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		628D7770243018CB001A7AA2 = {
+			isa = PBXGroup;
+			children = (
+				628D777B243018CB001A7AA2 /* Skiing Log Fixed */,
+				628D7792243018CC001A7AA2 /* Skiing Log FixedTests */,
+				628D779D243018CC001A7AA2 /* Skiing Log FixedUITests */,
+				628D777A243018CB001A7AA2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		628D777A243018CB001A7AA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				628D7779243018CB001A7AA2 /* Skiing Log Fixed.app */,
+				628D778F243018CC001A7AA2 /* Skiing Log FixedTests.xctest */,
+				628D779A243018CC001A7AA2 /* Skiing Log FixedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		628D777B243018CB001A7AA2 /* Skiing Log Fixed */ = {
+			isa = PBXGroup;
+			children = (
+				628D777C243018CB001A7AA2 /* AppDelegate.swift */,
+				628D777E243018CB001A7AA2 /* SceneDelegate.swift */,
+				628D7780243018CB001A7AA2 /* ViewController.swift */,
+				628D7782243018CB001A7AA2 /* Main.storyboard */,
+				628D7785243018CB001A7AA2 /* Assets.xcassets */,
+				628D7787243018CB001A7AA2 /* LaunchScreen.storyboard */,
+				628D778A243018CB001A7AA2 /* Info.plist */,
+			);
+			path = "Skiing Log Fixed";
+			sourceTree = "<group>";
+		};
+		628D7792243018CC001A7AA2 /* Skiing Log FixedTests */ = {
+			isa = PBXGroup;
+			children = (
+				628D7793243018CC001A7AA2 /* Skiing_Log_FixedTests.swift */,
+				628D7795243018CC001A7AA2 /* Info.plist */,
+			);
+			path = "Skiing Log FixedTests";
+			sourceTree = "<group>";
+		};
+		628D779D243018CC001A7AA2 /* Skiing Log FixedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				628D779E243018CC001A7AA2 /* Skiing_Log_FixedUITests.swift */,
+				628D77A0243018CC001A7AA2 /* Info.plist */,
+			);
+			path = "Skiing Log FixedUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		628D7778243018CB001A7AA2 /* Skiing Log Fixed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 628D77A3243018CC001A7AA2 /* Build configuration list for PBXNativeTarget "Skiing Log Fixed" */;
+			buildPhases = (
+				628D7775243018CB001A7AA2 /* Sources */,
+				628D7776243018CB001A7AA2 /* Frameworks */,
+				628D7777243018CB001A7AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Skiing Log Fixed";
+			productName = "Skiing Log Fixed";
+			productReference = 628D7779243018CB001A7AA2 /* Skiing Log Fixed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		628D778E243018CC001A7AA2 /* Skiing Log FixedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 628D77A6243018CC001A7AA2 /* Build configuration list for PBXNativeTarget "Skiing Log FixedTests" */;
+			buildPhases = (
+				628D778B243018CC001A7AA2 /* Sources */,
+				628D778C243018CC001A7AA2 /* Frameworks */,
+				628D778D243018CC001A7AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				628D7791243018CC001A7AA2 /* PBXTargetDependency */,
+			);
+			name = "Skiing Log FixedTests";
+			productName = "Skiing Log FixedTests";
+			productReference = 628D778F243018CC001A7AA2 /* Skiing Log FixedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		628D7799243018CC001A7AA2 /* Skiing Log FixedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 628D77A9243018CC001A7AA2 /* Build configuration list for PBXNativeTarget "Skiing Log FixedUITests" */;
+			buildPhases = (
+				628D7796243018CC001A7AA2 /* Sources */,
+				628D7797243018CC001A7AA2 /* Frameworks */,
+				628D7798243018CC001A7AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				628D779C243018CC001A7AA2 /* PBXTargetDependency */,
+			);
+			name = "Skiing Log FixedUITests";
+			productName = "Skiing Log FixedUITests";
+			productReference = 628D779A243018CC001A7AA2 /* Skiing Log FixedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		628D7771243018CB001A7AA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Harry Makovsky";
+				TargetAttributes = {
+					628D7778243018CB001A7AA2 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					628D778E243018CC001A7AA2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 628D7778243018CB001A7AA2;
+					};
+					628D7799243018CC001A7AA2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 628D7778243018CB001A7AA2;
+					};
+				};
+			};
+			buildConfigurationList = 628D7774243018CB001A7AA2 /* Build configuration list for PBXProject "Skiing Log Fixed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 628D7770243018CB001A7AA2;
+			productRefGroup = 628D777A243018CB001A7AA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				628D7778243018CB001A7AA2 /* Skiing Log Fixed */,
+				628D778E243018CC001A7AA2 /* Skiing Log FixedTests */,
+				628D7799243018CC001A7AA2 /* Skiing Log FixedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		628D7777243018CB001A7AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628D7789243018CB001A7AA2 /* LaunchScreen.storyboard in Resources */,
+				628D7786243018CB001A7AA2 /* Assets.xcassets in Resources */,
+				628D7784243018CB001A7AA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628D778D243018CC001A7AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628D7798243018CC001A7AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		628D7775243018CB001A7AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628D7781243018CB001A7AA2 /* ViewController.swift in Sources */,
+				628D777D243018CB001A7AA2 /* AppDelegate.swift in Sources */,
+				628D777F243018CB001A7AA2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628D778B243018CC001A7AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628D7794243018CC001A7AA2 /* Skiing_Log_FixedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		628D7796243018CC001A7AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628D779F243018CC001A7AA2 /* Skiing_Log_FixedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		628D7791243018CC001A7AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 628D7778243018CB001A7AA2 /* Skiing Log Fixed */;
+			targetProxy = 628D7790243018CC001A7AA2 /* PBXContainerItemProxy */;
+		};
+		628D779C243018CC001A7AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 628D7778243018CB001A7AA2 /* Skiing Log Fixed */;
+			targetProxy = 628D779B243018CC001A7AA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		628D7782243018CB001A7AA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				628D7783243018CB001A7AA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		628D7787243018CB001A7AA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				628D7788243018CB001A7AA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		628D77A1243018CC001A7AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		628D77A2243018CC001A7AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		628D77A4243018CC001A7AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Skiing Log Fixed/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Skiing-Log-Fixed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		628D77A5243018CC001A7AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Skiing Log Fixed/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Skiing-Log-Fixed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		628D77A7243018CC001A7AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Skiing Log FixedTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Skiing-Log-FixedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skiing Log Fixed.app/Skiing Log Fixed";
+			};
+			name = Debug;
+		};
+		628D77A8243018CC001A7AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Skiing Log FixedTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Skiing-Log-FixedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skiing Log Fixed.app/Skiing Log Fixed";
+			};
+			name = Release;
+		};
+		628D77AA243018CC001A7AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Skiing Log FixedUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Skiing-Log-FixedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Skiing Log Fixed";
+			};
+			name = Debug;
+		};
+		628D77AB243018CC001A7AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Skiing Log FixedUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "project.Skiing-Log-FixedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Skiing Log Fixed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		628D7774243018CB001A7AA2 /* Build configuration list for PBXProject "Skiing Log Fixed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				628D77A1243018CC001A7AA2 /* Debug */,
+				628D77A2243018CC001A7AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		628D77A3243018CC001A7AA2 /* Build configuration list for PBXNativeTarget "Skiing Log Fixed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				628D77A4243018CC001A7AA2 /* Debug */,
+				628D77A5243018CC001A7AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		628D77A6243018CC001A7AA2 /* Build configuration list for PBXNativeTarget "Skiing Log FixedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				628D77A7243018CC001A7AA2 /* Debug */,
+				628D77A8243018CC001A7AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		628D77A9243018CC001A7AA2 /* Build configuration list for PBXNativeTarget "Skiing Log FixedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				628D77AA243018CC001A7AA2 /* Debug */,
+				628D77AB243018CC001A7AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 628D7771243018CB001A7AA2 /* Project object */;
+}
