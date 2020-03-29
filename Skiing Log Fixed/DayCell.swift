@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
-class ItemCell: UITableViewCell {
-    
+class DayCell: UITableViewCell {
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var ratingLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
 }

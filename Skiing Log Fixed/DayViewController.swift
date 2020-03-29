@@ -98,23 +98,40 @@ class DayViewController: UITableViewController {
     cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DayCell", for: indexPath) as! DayCell
 
         
         let day = skiLog.allDays[indexPath.row]
-        
-        cell.textLabel?.text = day.mountain
-        
+//
+        cell.nameLabel.text = day.mountain
+        cell.dateLabel.text = day.date
+
         if(day.rating>3){
             let str = String(repeating: "*", count: day.rating)
-            cell.detailTextLabel?.text = str
-            cell.detailTextLabel?.textColor = UIColor.green
+            cell.ratingLabel.text = str
+            cell.ratingLabel.textColor = UIColor.green
         }else{
             let str = String(repeating: "*", count: day.rating)
-            cell.detailTextLabel?.text = str
-            cell.detailTextLabel?.textColor = UIColor.red
+            cell.ratingLabel.text = str
+            cell.ratingLabel.textColor = UIColor.red
         }
+
         
+        
+//        cell.textLabel?.text = day.mountain
+//
+//        if(day.rating>3){
+//            let str = String(repeating: "*", count: day.rating)
+//            cell.detailTextLabel?.text = str
+//            cell.detailTextLabel?.textColor = UIColor.green
+//        }else{
+//            let str = String(repeating: "*", count: day.rating)
+//            cell.detailTextLabel?.text = str
+//            cell.detailTextLabel?.textColor = UIColor.red
+//        }
+//
         return cell
         
     }
@@ -126,6 +143,8 @@ class DayViewController: UITableViewController {
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
+        
+        tableView.rowHeight = 65
     }
     
 }
