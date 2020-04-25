@@ -45,7 +45,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayCell" rowHeight="65" id="IYj-uu-nz4" customClass="DayCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayCell" rowHeight="65" id="IYj-uu-nz4" customClass="DayCell" customModule="Skiing_Log_Fixed" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IYj-uu-nz4" id="e3M-Va-1Iz">
@@ -84,6 +84,7 @@
                                     <outlet property="dateLabel" destination="Uad-HE-sMV" id="haL-sc-siJ"/>
                                     <outlet property="nameLabel" destination="eYZ-r1-ZIX" id="klT-3X-5FP"/>
                                     <outlet property="ratingLabel" destination="aqD-bK-kpa" id="Peu-Xy-hyM"/>
+                                    <segue destination="WSv-aj-HFy" kind="show" identifier="showDay" id="c5d-pz-EZ3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -97,16 +98,16 @@
             </objects>
             <point key="canvasLocation" x="16.800000000000001" y="-252.32383808095955"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="7lH-yP-WCY">
             <objects>
-                <viewController id="WSv-aj-HFy" sceneMemberID="viewController">
+                <viewController id="WSv-aj-HFy" customClass="DetailViewController" customModule="Skiing_Log_Fixed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fgC-3t-Jar">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lJH-Ep-euF">
-                                <rect key="frame" x="0.0" y="8" width="375" height="651"/>
+                                <rect key="frame" x="0.0" y="8" width="375" height="631"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fC9-nB-0pY">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="34"/>
@@ -157,7 +158,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgr-Zn-t8s">
-                                        <rect key="frame" x="0.0" y="126" width="375" height="525"/>
+                                        <rect key="frame" x="0.0" y="126" width="375" height="505"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -182,6 +183,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pOG-vO-WSi"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jYi-D6-89r"/>
+                    <connections>
+                        <outlet property="bestRunField" destination="2G0-Tl-tBK" id="fgI-KZ-wdn"/>
+                        <outlet property="dateField" destination="cgr-Zn-t8s" id="1Bb-4x-U0z"/>
+                        <outlet property="mountainField" destination="Fzb-AO-Bit" id="JYs-21-5y0"/>
+                        <outlet property="ratingField" destination="e0l-p0-Glc" id="45d-X8-jZD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ang-dn-P0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		624B45A924548DA600F8B92B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624B45A824548DA600F8B92B /* DetailViewController.swift */; };
 		628D777D243018CB001A7AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D777C243018CB001A7AA2 /* AppDelegate.swift */; };
 		628D7784243018CB001A7AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628D7782243018CB001A7AA2 /* Main.storyboard */; };
 		628D7786243018CB001A7AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628D7785243018CB001A7AA2 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		624B45A824548DA600F8B92B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		628D7779243018CB001A7AA2 /* Skiing Log Fixed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skiing Log Fixed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		628D777C243018CB001A7AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		628D7783243018CB001A7AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				628D77AE24301BE4001A7AA2 /* Day.swift */,
 				628D77B024301C0F001A7AA2 /* Ski Log.swift */,
 				628D77AC243019CF001A7AA2 /* DayViewController.swift */,
+				624B45A824548DA600F8B92B /* DetailViewController.swift */,
 				628D77B224302E92001A7AA2 /* DayCell.swift */,
 			);
 			path = "Skiing Log Fixed";
@@ -268,6 +271,7 @@
 				628D777D243018CB001A7AA2 /* AppDelegate.swift in Sources */,
 				628D77B124301C0F001A7AA2 /* Ski Log.swift in Sources */,
 				628D77B324302E92001A7AA2 /* DayCell.swift in Sources */,
+				624B45A924548DA600F8B92B /* DetailViewController.swift in Sources */,
 				628D77AD243019CF001A7AA2 /* DayViewController.swift in Sources */,
 				628D77AF24301BE4001A7AA2 /* Day.swift in Sources */,
 			);
