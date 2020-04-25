@@ -17,6 +17,8 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet var ratingField: UITextField!
     @IBOutlet var bestRunField: UITextField!
     @IBOutlet var dateField: UILabel!
+    @IBOutlet var dayDescriptionField: UITextField!
+    @IBOutlet var tempField: UITextField!
     
     var day: Day! {
         didSet{
@@ -47,7 +49,11 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
             day.rating = Int(ratingString) ?? 1
         }
     
+        let tempString = tempField.text ?? "0"
         
+        day.temp = Int(tempString) ?? 0
+        
+        day.dayDescription = dayDescriptionField.text ?? ""
         day.bestRun = bestRunField.text ?? ""
         
         
@@ -77,9 +83,10 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
             ratingField.textColor = UIColor.red
         }
         
-        
+        dayDescriptionField.text = day.dayDescription
         bestRunField.text = day.bestRun
         dateField.text = day.date
+        tempField.text = String(day.temp)
         
         self.view.backgroundColor = UIColor.init(red: 0.0, green: 0.7, blue: 1, alpha: 1)
         
