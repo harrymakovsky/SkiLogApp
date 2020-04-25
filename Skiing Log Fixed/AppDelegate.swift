@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let skiLog = SkiLog()
         
-        let dayController = window!.rootViewController as! DayViewController
+        
+        let navController = window!.rootViewController as! UINavigationController
+        let dayController = navController.topViewController as! DayViewController
         
         dayController.skiLog = skiLog
         

@@ -8,14 +8,40 @@
 
 import UIKit
 
-class DetailViewController: UIViewController{
+class DetailViewController: UIViewController, UITextFieldDelegate{
+    @IBAction func backGroundTapped(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
     
     @IBOutlet var mountainField: UITextField!
     @IBOutlet var ratingField: UITextField!
     @IBOutlet var bestRunField: UITextField!
     @IBOutlet var dateField: UILabel!
     
-    var day: Day!
+    var day: Day! {
+        didSet{
+            navigationItem.title = day.mountain
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        view.endEditing(true)
+        
+        day.mountain = mountainField.text ?? ""
+        
+        let ratingString = ratingField.text ?? "1"
+        
+        day.rating = Int(ratingString) ?? 1
+        
+        day.bestRun = bestRunField.text ?? ""
+        
+        
+        self.view.backgroundColor = UIColor.init(red: 0.0, green: 0.7, blue: 1, alpha: 1)
+        
+        
+    }
+    
     
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
@@ -38,5 +64,14 @@ class DetailViewController: UIViewController{
         bestRunField.text = day.bestRun
         dateField.text = day.date
         
+        self.view.backgroundColor = UIColor.init(red: 0.0, green: 0.7, blue: 1, alpha: 1)
+        
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+
 }

@@ -14,6 +14,12 @@ class DayViewController: UITableViewController {
     
     var skiLog : SkiLog!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
     
     override func tableView(_ tableView: UITableView,
             numberOfRowsInSection section: Int) -> Int {
@@ -21,7 +27,7 @@ class DayViewController: UITableViewController {
         
     }
     
-    @IBAction func addNewItem(_ sender: UIButton) {
+    @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         // Make a new index path for the 0th section, last row
         let newDay = skiLog.createDay()
         // Figure out where that item is in the array
@@ -33,20 +39,6 @@ class DayViewController: UITableViewController {
         }
     }
         
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
-        if isEditing {
-
-            sender.setTitle("Edit", for: .normal)
-
-            setEditing(false, animated: true)
-            
-        } else {
-
-            setEditing(true, animated: true)
-            
-        }
-    }
-    
     override func tableView(_ tableView: UITableView,
         moveRowAt sourceIndexPath: IndexPath,
         to destinatioIndexPath: IndexPath){
@@ -139,13 +131,22 @@ class DayViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Get the height of the status bar
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
-        tableView.contentInset = insets
-        tableView.scrollIndicatorInsets = insets
         
+        self.tableView.backgroundColor = UIColor.init(red: 0.0, green: 0.7, blue: 1, alpha: 1)
+        // Get the height of the status bar
+        
+
         tableView.rowHeight = 65
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.init(red: 0.0, green: 0.7, blue: 1, alpha: 1)    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
     }
     
 }
