@@ -32,7 +32,21 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
         
         let ratingString = ratingField.text ?? "1"
         
-        day.rating = Int(ratingString) ?? 1
+        switch ratingString{
+        case "★★★★★":
+            day.rating = 5
+        case "★★★★☆":
+            day.rating = 4
+        case "★★★☆☆":
+            day.rating = 3
+        case "★★☆☆☆":
+            day.rating = 2
+        case "★☆☆☆☆":
+            day.rating = 1
+        default:
+            day.rating = Int(ratingString) ?? 1
+        }
+    
         
         day.bestRun = bestRunField.text ?? ""
         
