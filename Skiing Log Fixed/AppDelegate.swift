@@ -12,11 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let skiLog = SkiLog()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let skiLog = SkiLog()
+        
         
         
         let navController = window!.rootViewController as! UINavigationController
@@ -25,6 +26,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         dayController.skiLog = skiLog
         
         return true
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        let success = skiLog.saveChanges()
+        if(success) {
+            print("Saved all of the days")
+        }else{
+            print("Could not save the days")
+        }
     }
 
 
