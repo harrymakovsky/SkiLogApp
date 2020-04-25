@@ -43,9 +43,9 @@ class Day: NSObject, NSCoding {
     required init(coder aDecoder: NSCoder){
         mountain = aDecoder.decodeObject(forKey: "mountain") as! String
         date = aDecoder.decodeObject(forKey: "date") as! String
-        rating = aDecoder.decodeObject(forKey: "rating") as! Int
+        rating = aDecoder.decodeInteger(forKey: "rating")
         bestRun = aDecoder.decodeObject(forKey: "bestRun") as! String
-        temp = aDecoder.decodeObject(forKey: "temp") as! Int
+        temp = aDecoder.decodeInteger(forKey: "temp")
         dayDescription = aDecoder.decodeObject(forKey: "dayDescription") as! String
         super.init()
     }
@@ -79,7 +79,14 @@ class Day: NSObject, NSCoding {
             bestRun: randomRun,dayDescription: randomDay, date: randomDate)
             
         }else{
-            self.init(mountain: "",temp: 0, rating: 0, bestRun: "", dayDescription: "", date: "")
+            let date = Date()
+            
+            let formatter = DateFormatter()
+            
+            formatter.dateFormat = "MM/dd/yyyy"
+            let result = formatter.string(from: date)
+            
+            self.init(mountain: "Enter name",temp: 0, rating: 0, bestRun: "", dayDescription: "", date: result)
         }
 
     

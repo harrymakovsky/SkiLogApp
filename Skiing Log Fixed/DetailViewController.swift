@@ -53,6 +53,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate{
             let str2 = String(repeating: "☆", count: 5-day.rating)
             ratingField.text = str + str2
             ratingField.textColor = UIColor.green
+        }else if (day.rating==0){
+            ratingField.text = "Enter 1-5"
+
         }else{
             let str = String(repeating: "★", count: day.rating)
             let str2 = String(repeating: "☆", count: 5-day.rating)

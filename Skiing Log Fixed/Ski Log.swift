@@ -35,7 +35,7 @@ class SkiLog{
     }
     
     @discardableResult func createDay() -> Day{
-        let newDay = Day(random: true)
+        let newDay = Day(random: false)
         
         allDays.append(newDay)
         
